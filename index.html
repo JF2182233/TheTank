@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vidoooo</title>
+  <title>Viduu</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
 </head>
 <body>
-    <video controls width="1280" height="720">
-        <source src="https://www.sendgb.com/src/download_one.php?uploadId=sE1tMlwYoFI&sc=6f6e4b2644408b9fc38f7e174c91cb1e&file=Tulsi+Final1.mp4&private_id=" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <div>
+    <video id="myVideo" controls crossorigin>
+      <source src="https://www.sendgb.com/src/download_one.php?uploadId=sE1tMlwYoFI&sc=6f6e4b2644408b9fc38f7e174c91cb1e&file=Tulsi+Final1.mp4&private_id=" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script>
+  const player = new Plyr('#myVideo');
+</script>
 </body>
 </html>
